@@ -1,0 +1,23 @@
+{
+  "name": "nextjs-files",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "solcjs --abi --include-path node_modules/ --base-path . blockchain/contracts/Lottery.sol --output-dir blockchain/build"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "solc": "^0.8.24",
+    "web3": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0"
+  }
+}

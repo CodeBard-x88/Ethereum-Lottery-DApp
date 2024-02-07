@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+
+/*************Header******************/
+
+.navbar{
+    display: flex;
+    background-color: #010B13;
+    align-items: center;
+    position: sticky;
+    border: 2px solid;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.lotteryName h1{
+    color: #BB9457;
+    margin-left: 30px;
+    font-weight: bolder;
+    font-family: serif;
+    text-transform: uppercase;
+}
+
+.lotteryName h1:hover{
+    transition: 0.8s;
+    transform: translateY(-5px);
+}
+
+.connectButton{
+    position: fixed;
+    left: 1160px;
+}
+
+.connectWalletButton{
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid;
+    border-radius: 20px;
+    color: #BB9457;
+    width: 180px;
+    font-size: 15px;
+    height: 50px;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.connectWalletButton:hover{
+    transition: 0.8s;
+    transform: translateY(-5px);
+}
+
+/************Main content*************/
+
+.main{
+    display: flex;
+}
+
+.maincontrols{
+    align-content: center;
+}
+
+.EnterLotteryButton{
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid;
+    border-radius: 20px;
+    color: #BB9457;
+    width: 160px;
+    font-size: 15px;
+    height: 50px;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: 70px;
+    left: 170px;
+}
+
+.EnterLotteryButton:hover{
+    transition: 0.8s;
+    transform: translateY(5px);   
+}
+
+.PickWinnerButton{
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid;
+    border-radius: 20px;
+    color: #BB9457;
+    width: 160px;
+    font-size: 15px;
+    height: 50px;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    top: 100px;
+    left: 170px;
+}
+
+.PickWinnerButton:hover{
+    transition: 0.8s;
+    transform: translateY(5px);   
+}
+
+.errormsg{
+    max-width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    padding: 5px;
+    text-align: center;
+}
+
+.errormsg p{
+    color: red;
+    font-weight: 600;
+}
+
+.successmsg{
+    max-width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    padding: 5px;
+    text-align: center;
+}
+
+.successmsg p{
+    color: green;
+    font-weight: 600;
+}
+
+
+
+.LotteryHistory h3{
+    text-align: center;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+.PlayersList h3{
+    text-align: center;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+.PotBalance{
+    background-color: #BB9457;
+    position: relative;
+    left: 700px;
+    top:40px;
+    width: 220px;
+    height: 100px;
+    border: 5px solid chocolate;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.PotBalance h3{
+    text-align: center;
+    text-transform: uppercase;   
+}
+
+
+
+.LotteryHistory,
+.PlayersList {
+  background-color: #BB9457;
+  position: relative;
+  width: 45%;
+  height: 150px;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow-y: auto; 
+}
+
+.PlayersList{
+    position: relative;
+    left: 700px;
+    top:40px;
+    width: 450px;
+    height: 150px;
+    margin-top: 10px;
+    overflow-y: auto;
+}
+
+.LotteryHistory{
+    position: relative;
+    left: 700px;
+    top:40px;
+    width: 450px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .LotteryHistory,
+  .PlayersList {
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
